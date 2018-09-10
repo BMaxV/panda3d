@@ -1,13 +1,8 @@
-
 language: python
   matrix:
-    include:
-      - python:3.5
-        env:
-          - PEP8=1
-        before_install:
-          - pip install pycodestyle
-        script:
-          - pycodestyle .
+    include: python:3.5
+        env: PEP8=1
+        before_install: pip install pycodestyle
+        script: pycodestyle .
 
 
